@@ -1,0 +1,77 @@
+.filters {
+  flex-shrink: 0;
+  width: 30%;
+  max-width: 500px;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.form-inputs {
+  flex-grow: 1;
+}
+
+.form-section {
+  margin-top: 1rem;
+}
+
+.radio-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.radio-line > label {
+  cursor: pointer;
+}
+
+.crime-count {
+  color: var(--gray);
+}
+
+.region-select {
+  margin-top: 0.75rem;
+}
+
+.filter-points {
+  position: fixed;
+  left: 2rem;
+  bottom: 1.5rem;
+  display: flex;
+  column-gap: 2rem;
+}
+
+.filter-point-option {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.filter-point-option.checked {
+  opacity: 1;
+}
+
+.filter-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.total-results {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.reset-button {
+  margin-top: 1rem;
+}

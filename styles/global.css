@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-UltraLight.otf'),
+    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Light.otf'),
+    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Thin.otf'),
+    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Regular.otf'),
+    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Medium.otf'),
+    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Bold.otf');
+}
+
+@font-face {
+  font-family: 'e-Ukraine-Head';
+  src: url('./fonts/e-Ukraine_typeface/e-Ukraine-Head/e-UkraineHead-Medium.otf');
+}
+
+:root {
+  --primary: #f0552e;
+  --black: #1a1a1a;
+  --gray: #999;
+  --lightgray: #ebebeb;
+}
+
+html {
+  font-family: e-Ukraine, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h2 {
+  font-family: e-Ukraine-Head, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: e-Ukraine-Head, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-family: e-Ukraine-Head, sans-serif;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 60px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 60px;
+  cursor: pointer;
+}

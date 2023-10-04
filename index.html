@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="./js/index.js" type="module"></script>
+    <title>Crimes Map</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="map-outer-container">
+        <div class="map-inner-container">
+          <img src="./assets/Ukraine.png" alt="Ukraine map" class="map-image" />
+        </div>
+        <section class="filter-points">
+          <div class="filter-point-option checked" data-crime-type="murder">
+            <div class="filter-point murder"></div>
+            <span>murder</span>
+          </div>
+          <div class="filter-point-option checked" data-crime-type="abduction">
+            <div class="filter-point abduction"></div>
+            <span>abduction</span>
+          </div>
+          <div class="filter-point-option checked" data-crime-type="torture">
+            <div class="filter-point torture"></div>
+            <span>torture / inhuman treatment</span>
+          </div>
+          <div class="filter-point-option checked" data-crime-type="sexual">
+            <div class="filter-point sexual"></div>
+            <span>sexual abuse</span>
+          </div>
+          <div class="filter-point-option checked" data-crime-type="child">
+            <div class="filter-point child"></div>
+            <span>child abuse / abduction</span>
+          </div>
+        </section>
+      </div>
+      <section class="filters">
+        <form class="form">
+          <div class="form-inputs">
+            <h2>Filters</h2>
+            <div class="form-section crime-types">
+              <h3>Crime Type</h3>
+              <div class="radio-line">
+                <label class="murder">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="murder"
+                  />
+                  Murder
+                </label>
+                <span class="crime-count"></span>
+              </div>
+              <div class="radio-line">
+                <label class="abduction">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="abduction"
+                  />
+                  Abduction
+                </label>
+                <span class="crime-count"></span>
+              </div>
+              <div class="radio-line">
+                <label class="torture">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="torture"
+                  />
+                  Torture / inhuman treatment
+                </label>
+                <span class="crime-count"></span>
+              </div>
+              <div class="radio-line">
+                <label class="sexual">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="sexual"
+                  />
+                  Sexual abuse
+                </label>
+                <span class="crime-count"></span>
+              </div>
+              <div class="radio-line">
+                <label class="child">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="child"
+                  />
+                  Child abuse / abduction (and other)
+                </label>
+                <span class="crime-count"></span>
+              </div>
+              <div class="radio-line">
+                <label class="all">
+                  <input
+                    type="radio"
+                    name="crime-type"
+                    data-crime-type="all"
+                    checked
+                  />
+                  All
+                </label>
+                <span class="crime-count"></span>
+              </div>
+            </div>
+            <div class="form-section region">
+              <h3>Region</h3>
+              <select name="region" class="region-select">
+                <option value="all">All States</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-section">
+            <p class="total-results">Results: <span class="total-results-number"></span></p>
+            <button type="button" class="button reset-button">
+              <img src="./assets/icons/cross.svg" alt="Cross icon" />
+              <span>Clear All Filters</span>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
