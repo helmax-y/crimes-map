@@ -6,7 +6,7 @@ export const styles = `
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="./src/styles/index.css" />
+  <link rel="stylesheet" href="./src/styles/crimes-map/index.css" />
 `;
 
 export const initialHTML = `
