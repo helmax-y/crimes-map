@@ -1,0 +1,83 @@
+.sidebar {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.trident {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.trident img {
+  width: 28px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  width: 20px;
+}
+
+.navigation-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-list-toggler {
+  position: fixed;
+  left: 2rem;
+  top: 78%;
+  z-index: 1;
+  display: none;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.mobile-list-toggler > img {
+  width: 24px;
+}
+
+@media (max-width: 768px) {
+  .mobile-list-toggler {
+    display: block;
+  }
+}
+
+.mobile-trident {
+  position: fixed;
+  top: 0.5rem;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-trident > img {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .mobile-trident {
+    display: block;
+  }
+}

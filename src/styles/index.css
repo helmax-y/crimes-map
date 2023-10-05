@@ -1,0 +1,16 @@
+@import url('./global.css');
+@import url('./navigation.css');
+@import url('./map.css');
+@import url('./filters.css');
+@import url('./list.css');
+
+.root {
+  display: flex;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .root {
+    display: block;
+  }
+}

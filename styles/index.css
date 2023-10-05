@@ -1,7 +1,0 @@
-@import url("./global.css");
-@import url("./map.css");
-@import url("./filters.css");
-
-.main {
-  display: flex;
-}

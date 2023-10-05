@@ -1,0 +1,29 @@
+.list {
+  flex-grow: 1;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content max-content max-content;
+  grid-gap: 1rem;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+.list-card {
+  padding: 1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+}
+
+.list-card h4 {
+  margin-top: 0.5rem;
+  color: var(--gray);
+}

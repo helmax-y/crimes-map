@@ -1,26 +1,18 @@
-@font-face {
-  font-family: 'e-Ukraine';
-  src: url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-UltraLight.otf'),
-    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Light.otf'),
-    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Thin.otf'),
-    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Regular.otf'),
-    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Medium.otf'),
-    url('./fonts/e-Ukraine_typeface/e-Ukraine/e-Ukraine-Bold.otf');
-}
-
-@font-face {
-  font-family: 'e-Ukraine-Head';
-  src: url('./fonts/e-Ukraine_typeface/e-Ukraine-Head/e-UkraineHead-Medium.otf');
-}
-
-:root {
+:host {
   --primary: #f0552e;
   --black: #1a1a1a;
+  --white: #fff;
   --gray: #999;
   --lightgray: #ebebeb;
+
+  --black-marker: #1a1a1a;
+  --orange-marker: #f0552e;
+  --blue-marker: #76bce3;
+  --brown-marker: #852d17;
+  --yellow-marker: #ffa800;
 }
 
-html {
+.root {
   font-family: e-Ukraine, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -31,14 +23,20 @@ h2 {
   font-family: e-Ukraine-Head, sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
 }
 
 h3 {
   font-family: e-Ukraine-Head, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 .button {
